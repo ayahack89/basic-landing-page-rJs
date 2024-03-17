@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+:root{
+  --body :whitesmoke;
+  --border: #04aed97d;
+  --footer: #0f172a;
+
+}
+body{
+  background-color: var(--body); 
+  color: white;
+  font-family: "Playfair", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  
+}
+/*Navbar -Start*/
+.navbar{
+  background-color:var(--body) ;
+  padding: 5px;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* position: fixed; */
+  width: 100vw;
+}
+.navbar .heading h1{
+  font-size: 2.5rem;
+  font-weight: lighter;
+  margin-left: 10px;
+}
+.navbar .heading b{
+  color: var(--border);
+}
+.navbar .navlist ul{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-right: 20px;
+}
+.navbar .navlist ul li{
+  list-style-type: none;
+  padding: 20px;
+  
+}
+
+/*Navbar -End*/
+
+/*Hero -Start*/
+.background {
+  background: rgba(0, 0, 0, 0.718) url("img/background.jpg"); 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-blend-mode: darken; 
+
+}
+
+/*Hero -End*/
+
+/*Hero button -Start*/
+.btn-one {
+  color: white;
+  transition: all 0.3s;
+  position: relative;
+  font-size: 1.5rem;
+  width: 20vw;
+  padding: 20px;
+  margin-top: 30px;
+  text-align: center;
+}
+.btn-one span {
+  transition: all 0.3s;
+}
+.btn-one::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-color: var(--border);
+  border-bottom-color:var(--border);
+  transform: scale(0.1, 1);
+}
+.btn-one:hover span {
+  letter-spacing: 2px;
+}
+.btn-one:hover::before {
+  opacity: 1; 
+  transform: scale(1, 1); 
+}
+.btn-one::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+  background-color: rgba(7, 213, 250, 0.573);
+}
+.btn-one:hover::after {
+  opacity: 0; 
+  transform: scale(0.1, 1);
+}
+/*Hero button -End*/
+
+/*About -Start*/
+.about{
+  color: black;
+  padding: 20px;
+  border-left: 5px solid var(--border);
+  border-radius: 20px;
+  margin: 20px;
+  font-size: 1.2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.about p{
+  font-weight: lighter;
+}
+/*About -End*/
+
+/*Learn -Start*/
+.learn{
+  color: black;
+  padding: 20px;
+  border-left: 5px solid var(--border);
+  border-radius: 20px;
+  margin: 20px;
+  font-size: 1.2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.learn p{
+  font-weight: lighter;
+}
+/*Learn -End*/
+
+/*Course -Stat*/
+.course{
+  color: black;
+  padding: 20px;
+  border-left: 5px solid var(--border);
+  border-radius: 20px;
+  margin: 20px;
+  font-size: 1.2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+/*Course -End*/
+
+/*Footer -Start*/
+.footer{
+  background-color: var(--footer);
+  color: whitesmoke;
+  padding: 20px;
+  text-align: center;
+
+}
+.footer .cr{
+  font-size: 12px;
+  font-weight: lighter;
+}
+/*Footer -End*/
+
+
